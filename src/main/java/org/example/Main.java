@@ -2,7 +2,13 @@ package org.example;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;
-
+/*
+First off I have to say the readme is baller.
+So when I get a list of available books the program just stops after showing the books.
+I tried checking in a book, which it did, but then the program stopped.
+So I think the whole program needs to be encased in a while loop.
+I also did not see an option to check out a book myself, so that needs to be implemented.
+ */
 public class Main {
     public static void main(String[] args) {
 
@@ -21,7 +27,8 @@ public class Main {
         }
         scanner.nextLine();
 
-        bookArray[0] = new Book(101, "978-1234567890", "The Secret of the Lost Ark", false, "");
+        //With the new constructor there will be less typing since you know from the get go if its not checked out
+        bookArray[0] = new Book(101, "978-1234567890", "The Secret of the Lost Ark");
         bookArray[1] = new Book(102, "978-987654321", "Mysteries of the Midnight Moon", false, "");
         bookArray[2] = new Book(103, "978- 5432109876", "Whispers in the Dark", false, "");
         bookArray[3] = new Book(104, "978-1112223334", "The Enchanted Forest", false, "");
